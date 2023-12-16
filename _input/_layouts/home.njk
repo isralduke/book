@@ -1,0 +1,11 @@
+---
+layout: _base.njk
+---
+
+{{ content | safe }}
+
+{% for item in collections.books %}
+	<a href="{{ item.url }}">
+		{{ item.data.title }}
+	</a>
+{% endfor %}
