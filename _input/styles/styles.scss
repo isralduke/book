@@ -9,24 +9,21 @@ html, body {
 	font-feature-settings: "ss02" 1;
 }
 .container {
-	max-width: 55em;
-	margin: 0 1rem;
+	width: calc( 100% - 3rem );
+	margin: 0 1.5rem;
 }
 h1 {
-	
 	margin-block-start: 12rem;
-	margin-block-end: 4rem;
 	margin-inline-start: 0;
 	margin-inline-end: 0;
 }
-h2, h3, h4 {
+h2 {
+	margin-block-start: 4rem;
 	margin-block-end: 1rem;
 }
-p + h2, blockquote + h2 {
-	margin-block-start: 8rem;
-}
-p + h3, blockquote + h3 {
-	margin-block-start: 4rem;
+h3 {
+	margin-block-start: 2rem;
+	margin-block-end: 1rem;
 }
 blockquote {
 	padding: 1rem 2rem .0625rem;
@@ -35,13 +32,15 @@ blockquote {
 }
 p {
 	margin-block-end: 1rem;
+	text-align: justify;
 }
 a[name] {
-	font-weight: 900;
 	text-decoration: none;
+	color: inherit;
 }
-@media screen and (min-width: 55em) {
+@media screen and (min-width: 55ch) {
 	.container {
+		max-width: 55ch;
 		margin: 0 auto;
 	}
 }
