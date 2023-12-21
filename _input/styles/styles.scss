@@ -10,20 +10,27 @@ html, body {
 }
 .container {
 	width: calc( 100% - 3rem );
+	padding: 12rem 0;
 	margin: 0 1.5rem;
 }
 h1 {
-	margin-block-start: 12rem;
+	margin-block-end: 12rem;
 	margin-inline-start: 0;
 	margin-inline-end: 0;
+	font-size: 2rem;
 }
 h2 {
-	margin-block-start: 4rem;
-	margin-block-end: 1rem;
+	margin-block-start: 8rem;
+	margin-block-end: 2rem;
+	font-size: 1.5rem;
 }
 h3 {
 	margin-block-start: 2rem;
-	margin-block-end: 1rem;
+	margin-block-end: .5rem;
+	font-size: 1.25rem;
+}
+h4 {
+	margin-block-end: .5rem;
 }
 blockquote {
 	padding: 1rem 2rem .0625rem;
